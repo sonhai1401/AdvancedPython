@@ -1,4 +1,4 @@
-#Hệ Thống Quản Lý Khách Sạn
+# Hệ thống quản lý khách sạn
 
 Ứng dụng này là một hệ thống quản lý khách sạn với giao diện đồ họa (GUI) sử dụng Tkinter của Python để tạo giao diện người dùng và psycopg2 để kết nối với cơ sở dữ liệu PostgreSQL.
 
