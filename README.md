@@ -38,6 +38,7 @@ Tìm kiếm và đặt phòng: Khách hàng có thể tìm phòng trống và đ
 Trả phòng: Cho phép khách hàng thực hiện trả phòng và thanh toán chi phí cho thời gian đã lưu trú.
 
 Lưu Ý
+
 Đảm bảo rằng PostgreSQL đang chạy và thông tin kết nối cơ sở dữ liệu (dbname, user, password, host) trong mã Python là chính xác.
 Mật khẩu người dùng được mã hóa trước khi lưu vào cơ sở dữ liệu để bảo mật.
 Nếu có lỗi kết nối hoặc lỗi từ cơ sở dữ liệu, thông báo lỗi sẽ hiển thị cho người dùng để dễ dàng khắc phục.
