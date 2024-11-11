@@ -1,4 +1,5 @@
 Hệ Thống Quản Lý Khách Sạn
+
 Ứng dụng này là một hệ thống quản lý khách sạn với giao diện đồ họa (GUI) sử dụng Tkinter của Python để tạo giao diện người dùng và psycopg2 để kết nối với cơ sở dữ liệu PostgreSQL.
 
 Tính Năng
@@ -7,6 +8,7 @@ Giao Diện Quản Lý:
 Xem trạng thái phòng: Hiển thị mã phòng, tình trạng, tiện nghi và khách hàng đang ở (nếu có).
 Xem khách hàng đang lưu trú: Hiển thị danh sách khách hàng hiện đang lưu trú trong khách sạn.
 Xem tổng doanh thu: Hiển thị tổng doanh thu từ các hóa đơn thanh toán.
+
 Giao Diện Khách Hàng:
 Tìm kiếm và đặt phòng: Cho phép khách hàng tìm phòng trống dựa trên số giường và mức giá tối đa.
 Trả phòng: Cho phép khách hàng trả phòng và hiển thị tổng chi phí phải trả cho thời gian lưu trú.
