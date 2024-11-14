@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Phòng</title>
+</head>
+<body>
+    <h1>Danh sách Phòng</h1>
+    <table border="1">
+        <tr>
+            <th>ID Phòng</th>
+            <th>Số lượng giường</th>
+            <th>Tiện nghi</th>
+            <th>Giá</th>
+            <th>Tình trạng</th>
+        </tr>
+        {% for ph in phongs %}
+        <tr>
+            <td>{{ ph[0] }}</td>
+            <td>{{ ph[1] }}</td>
+            <td>{{ ph[2] }}</td>
+            <td>{{ ph[3] }}</td>
+            <td>{{ ph[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Thêm Phòng mới</h2>
+    <form action="{{ url_for('add_phong') }}" method="post">
+        <label for="so_luong_giuong">Số lượng giường:</label>
+        <input type="number" name="so_luong_giuong" required><br>
+
+        <label for="tien_nghi">Tiện nghi:</label>
+        <input type="text" name="tien_nghi" required><br>
+
+        <label for="gia">Giá:</label>
+        <input type="number" name="gia" required><br>
+
+        <label for="tinh_trang">Tình trạng:</label>
+        <input type="text" name="tinh_trang" required><br>
+
+        <button type="submit">Thêm phòng</button>
+    </form>
+</body>
+</html>
