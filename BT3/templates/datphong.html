@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Đặt phòng</title>
+</head>
+<body>
+    <h1>Danh sách Đặt phòng</h1>
+    <table border="1">
+        <tr>
+            <th>ID Đặt phòng</th>
+            <th>Khách hàng</th>
+            <th>Phòng</th>
+            <th>Ngày nhận phòng</th>
+            <th>Ngày trả phòng</th>
+        </tr>
+        {% for dp in datphongs %}
+        <tr>
+            <td>{{ dp[0] }}</td>
+            <td>{{ dp[1] }}</td>
+            <td>{{ dp[2] }}</td>
+            <td>{{ dp[3] }}</td>
+            <td>{{ dp[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Thêm Đặt phòng mới</h2>
+    <form action="{{ url_for('add_datphong') }}" method="post">
+        <label for="id_khachhang">ID Khách hàng:</label>
+        <input type="number" name="id_khachhang" required><br>
+
+        <label for="id_phong">ID Phòng:</label>
+        <input type="number" name="id_phong" required><br>
+
+        <label for="ngay_nhan">Ngày nhận phòng:</label>
+        <input type="date" name="ngay_nhan" required><br>
+
+        <label for="ngay_tra">Ngày trả phòng:</label>
+        <input type="date" name="ngay_tra" required><br>
+
+        <button type="submit">Thêm đặt phòng</button>
+    </form>
+</body>
+</html>
